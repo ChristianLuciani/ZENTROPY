@@ -1,5 +1,7 @@
 """
-ZENTROPY — Stage 0: Handshake via Supabase Client v2.24
+ZENTROPY — Stage 0: Handshake
+Scripts de dev usan SERVICE KEY (admin local).
+La app usará SUPABASE_KEY (publishable) con auth real.
 """
 import os, sys
 from dotenv import load_dotenv
@@ -12,21 +14,22 @@ load_dotenv()
 console = Console()
 
 def test_connection():
-    url  = os.getenv("SUPABASE_URL")
-    key  = os.getenv("SUPABASE_KEY")
-    uid  = os.getenv("NEXOS_USER_ID")
+    url         = os.getenv("SUPABASE_URL")
+    service_key = os.getenv("SUPABASE_SERVICE_KEY")
+    uid         = os.getenv("NEXOS_USER_ID")
 
-    if not url or not key:
-        rprint("[red]❌ SUPABASE_URL o SUPABASE_KEY no encontradas en .env[/red]")
+    if not url or not service_key:
+        rprint("[red]❌ SUPABASE_URL o SUPABASE_SERVICE_KEY no encontradas en .env[/red]")
         sys.exit(1)
 
-    rprint("\n[bold cyan]🌀 ZENTROPY — Database Handshake v0.1[/bold cyan]\n")
+    rprint("\n[bold cyan]🌀 ZENTROPY — Database Handshake v0.2[/bold cyan]")
+    rprint("[dim]   Modo: admin/dev (service key) — scripts locales únicamente[/dim]\n")
 
     try:
-        supabase: Client = create_client(url, key)
-        rprint("[green]✅ Cliente Supabase 2.24 inicializado[/green]\n")
+        supabase: Client = create_client(url, service_key)
+        rprint("[green]✅ Cliente Supabase inicializado[/green]\n")
 
-        # Test tablas core
+        # Tablas core
         core_tables = ["profiles", "entities", "content_atoms", "missions", "adr_logs"]
         t = Table(title="📊 Tablas Core")
         t.add_column("Tabla", style="cyan")
@@ -42,29 +45,26 @@ def test_connection():
 
         console.print(t)
 
-        # Test usuario cluciani
+        # Verificar cluciani
+        rprint(f"\n[bold]🔍 Verificando tenant: cluciani[/bold]")
+
+        # Por UUID si está definido
         if uid:
-            rprint(f"\n[bold]🔍 Verificando tenant: cluciani[/bold]")
             res = supabase.table("profiles").select("*").eq("id", uid).execute()
-            if res.data:
-                p = res.data[0]
-                rprint(f"[green]✅ Tenant encontrado[/green]")
-                rprint(f"   username  : [cyan]{p.get('username', 'N/A')}[/cyan]")
-                rprint(f"   full_name : [cyan]{p.get('full_name', 'N/A')}[/cyan]")
-                rprint(f"   id        : [dim]{p.get('id')}[/dim]")
-            else:
-                rprint("[yellow]⚠️  UUID no encontrado en profiles — verifica NEXOS_USER_ID[/yellow]")
         else:
-            # Buscar por username como fallback
-            rprint("\n[yellow]⚠️  NEXOS_USER_ID no definido — buscando por username...[/yellow]")
             res = supabase.table("profiles").select("*").eq("username", "cluciani").execute()
-            if res.data:
-                p = res.data[0]
-                rprint(f"[green]✅ Tenant encontrado por username[/green]")
-                rprint(f"   id : [bold cyan]{p.get('id')}[/bold cyan]")
-                rprint(f"\n[yellow]👆 Copia ese UUID a NEXOS_USER_ID en tu .env[/yellow]")
-            else:
-                rprint("[red]❌ Usuario cluciani no encontrado en profiles[/red]")
+
+        if res.data:
+            p = res.data[0]
+            rprint(f"[green]✅ Tenant encontrado[/green]")
+            rprint(f"   username  : [cyan]{p.get('username')}[/cyan]")
+            rprint(f"   full_name : [cyan]{p.get('full_name')}[/cyan]")
+            rprint(f"   id        : [bold cyan]{p.get('id')}[/bold cyan]")
+            if not uid:
+                rprint(f"\n[bold yellow]👆 Agrega a tu .env:[/bold yellow]")
+                rprint(f"[bold]NEXOS_USER_ID={p.get('id')}[/bold]")
+        else:
+            rprint("[red]❌ Perfil no encontrado — ejecuta: python scripts/seed_tenant.py[/red]")
 
         rprint("\n[bold green]" + "=" * 50 + "[/bold green]")
         rprint("[bold green]✅ HANDSHAKE COMPLETO — Listo para Etapa 1[/bold green]")
