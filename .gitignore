@@ -1,0 +1,35 @@
+# Secrets — NUNCA trackear
+.env
+*.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDEs
+.cursor/
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/
