@@ -6,8 +6,7 @@
 CREATE SCHEMA IF NOT EXISTS zentropia;
 
 -- ------------------------------------------------------------
--- 1. SESSIONS — Una sesión = una conversaci
-ón con una IA
+-- 1. SESSIONS — Una sesión = una conversación con una IA
 -- ------------------------------------------------------------
 CREATE TABLE zentropia.sessions (
     id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
