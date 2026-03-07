@@ -1,0 +1,40 @@
+# ZENTROPY — Open WebUI (Stage 2)
+# Puerto: 3010 | Red: zentropy_net
+# Mac M2 (arm64) compatible
+
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: zentropy_webui
+    restart: unless-stopped
+    ports:
+      - "3010:8080"
+    volumes:
+      - open-webui-data:/app/backend/data
+    environment:
+      # Sin Ollama local por ahora — solo OpenRouter
+      - WEBUI_AUTH=true
+      - WEBUI_NAME=ZENTROPY
+      - WEBUI_URL=http://localhost:3010
+
+      # OpenRouter como proveedor principal
+      - OPENAI_API_BASE_URL=https://openrouter.ai/api/v1
+      - OPENAI_API_KEY=${OPENROUTER_API_KEY}
+
+      # Supabase como base de datos (opcional Stage 2, activar en Stage 3)
+      # - DATABASE_URL=${SUPABASE_DB_URL}
+
+    networks:
+      - zentropy_net
+
+    # Mac M2 — forzar plataforma arm64
+    platform: linux/arm64
+
+volumes:
+  open-webui-data:
+    name: zentropy_webui_data
+
+networks:
+  zentropy_net:
+    name: zentropy_net
+    driver: bridge
