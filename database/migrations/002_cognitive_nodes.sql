@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS zentropia.projects (
 
 INSERT INTO zentropia.projects (name, strategic_value, description) VALUES
   ('ZENTROPY',  10, 'Sistema de cognición externa y soberanía cognitiva personal'),
-  ('CLAPPS',     9, 'CLAPPS.AI — plataforma SaaS federada para automatización de clínicas. MVP: My Podo Center'),
+  ('CLAPPS',     9, 'CLAPPS.AI — Comprehensive Learning and Applications Platform Suite. SaaS federado multi-cliente. MVP: My Podo Center'),
   ('NOOS',       8, 'Natural Organization Operating System — consultoría de entropía organizacional en sistemas complejos'),
   ('KONTABLO',   7, 'Ontología contable universal open-source inspirada en Esperanto, puente IFRS/XBRL para LATAM'),
   ('PERSONAL',   5, 'Desarrollo personal, reflexiones, hábitos'),
