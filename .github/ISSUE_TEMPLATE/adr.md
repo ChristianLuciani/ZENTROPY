@@ -3,7 +3,7 @@ name: "🏛️ ADR — Decisión Arquitectónica"
 about: Proponer o registrar una decisión de diseño importante
 title: "[ADR] "
 labels: ["decision", "needs-review"]
-assignees: ["ChristianLuciani"]
+assignees: ["User"]
 ---
 
 ## Decisión
@@ -26,7 +26,7 @@ assignees: ["ChristianLuciani"]
 
 ## Agente que propone
 - [ ] 👤 Humano  
-- [ ] 🤖 Claude  
+- [ ] 🤖 Agente  
 - [ ] 🔀 Híbrido
 
 <!-- Al aprobar este issue, mover el ADR a docs/adr/ADR-XXX.md -->
