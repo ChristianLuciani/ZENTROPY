@@ -3,7 +3,7 @@ name: "⚡ Task"
 about: Tarea concreta de desarrollo o ejecución
 title: "[TASK] "
 labels: ["task"]
-assignees: ["ChristianLuciani"]
+assignees: ["User"]
 ---
 
 ## 🎯 Objetivo
@@ -19,7 +19,7 @@ assignees: ["ChristianLuciani"]
 - **Repo:** 
 - **Tipo:** SISTEMA | PRODUCTO | INVESTIGACIÓN | HERRAMIENTA | IDENTIDAD
 - **Contexto:** OPUS | MÉTIER | AKADEMIA | INFRAESTRUCTURA | VIDA
-- **Agente:** 👤 Humano | 🤖 Claude | 🖥️ Cursor | 🔀 Híbrido
+- **Agente:** 👤 Humano | 🤖 Agente | 🖥️ Cursor | 🔀 Híbrido
 - **Complejidad:** 🟢 S | 🟡 M | 🟠 L | 🟣 XL
 - **Energía:** ⚡ Quick Win | 🔋 Deep Work | 🧠 Brainstorm
 
