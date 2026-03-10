@@ -3,7 +3,7 @@ name: "🔬 Research"
 about: Unidad de investigación — hallazgo, pregunta abierta, análisis
 title: "[RESEARCH] "
 labels: ["research"]
-assignees: ["ChristianLuciani"]
+assignees: ["User"]
 ---
 
 ## ❓ Pregunta o Hipótesis
