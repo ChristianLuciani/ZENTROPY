@@ -3,7 +3,7 @@ name: "🚨 Incident"
 about: Algo roto en producción o comportamiento inesperado crítico
 title: "[INCIDENT] "
 labels: ["incident", "priority:critical"]
-assignees: ["ChristianLuciani"]
+assignees: ["User"]
 ---
 
 ## 🔴 Síntoma
