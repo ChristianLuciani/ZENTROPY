@@ -1,0 +1,11 @@
+# user_data/ — Datos específicos por tenant
+# Estructura: user_data/[tenant_id]/
+# 
+# Archivos por tenant:
+#   context.md      — contexto profesional y personal del usuario
+#   repos.yml       — inventario de repos con clasificación TIPO × CONTEXTO
+#   preferences.yml — preferencias de agentes y notificaciones
+#
+# IMPORTANTE: user_data/ está en .gitignore para repos públicos.
+# En instalaciones multi-tenant, este directorio vive fuera del repo
+# o en un volumen Docker separado.
