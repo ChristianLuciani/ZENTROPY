@@ -71,29 +71,29 @@ La diferencia entre un archivo y una memoria no es el formato. Es la **estructur
 
 ```
 ┌─────────────────────────────────────────────────┐
-│                   CAPTURA                        │
+│                   CAPTURA                       │
 │  Claude · ChatGPT · Gemini · Cursor · Logseq    │
 └────────────────────┬────────────────────────────┘
                      │ ingest.py
                      ▼
 ┌─────────────────────────────────────────────────┐
-│                  PERSISTENCIA                    │
+│                  PERSISTENCIA                   │
 │         Supabase · schema: zentropia            │
 │     sessions  ·  messages  ·  insights          │
 └────────────────────┬────────────────────────────┘
                      │ distill (próxima etapa)
                      ▼
 ┌─────────────────────────────────────────────────┐
-│                 DESTILACIÓN                      │
+│                 DESTILACIÓN                     │
 │    Raw → Refinado → Implementado → Archivado    │
 │         insights · ADRs · patrones              │
 └────────────────────┬────────────────────────────┘
                      │ search + RAG
                      ▼
 ┌─────────────────────────────────────────────────┐
-│                  RECUPERACIÓN                    │
+│                  RECUPERACIÓN                   │
 │    Open WebUI · API · Frontend · Mobile         │
-│   "¿Qué decidí sobre X hace 3 semanas?"        │
+│   "¿Qué decidí sobre X hace 3 semanas?"         │
 └─────────────────────────────────────────────────┘
 ```
 
