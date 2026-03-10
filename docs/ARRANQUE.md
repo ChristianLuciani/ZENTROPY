@@ -91,11 +91,12 @@ En OpenRouter ya tienes acceso a todos. Solo necesitas activar los modelos en Ze
 
 | Proveedor | Modelo en OpenRouter |
 |-----------|---------------------|
-| Gemini    | `google/gemini-2.0-flash-exp` |
-| Claude    | `anthropic/claude-sonnet-4-5` |
-| Z.ai      | `x-ai/grok-3` |
+| Gemini    | `google/gemini-3.0-flash-exp` |
+| Claude    | `anthropic/claude-sonnet-4-6` |
+| XAI      | `x-ai/grok-4` |
+| Z.ai      | `GML-5` |
 | DeepSeek  | `deepseek/deepseek-r1` |
-| GPT-4o    | `openai/gpt-4o` |
+
 
 En Zentropy: **Settings > Models** — busca y activa cada uno.
 
