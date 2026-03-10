@@ -1,0 +1,58 @@
+# ═══════════════════════════════════════════════════════════════════
+# CLASIFICACION.yml — Contrato legible por máquina
+# Leído por MNENTROPY para calcular temperatura y clasificar el repo.
+# Completar al crear el repo. Revisar cada 3 meses.
+# ═══════════════════════════════════════════════════════════════════
+
+# IDENTIDAD
+nombre: "[NOMBRE]"
+descripcion_corta: "[Una línea. Qué hace.]"
+
+# TAXONOMÍA DIGITAL UNIVERSAL (ADR-O-001)
+tipo: "[SISTEMA | PRODUCTO | INVESTIGACIÓN | HERRAMIENTA | IDENTIDAD | RECURSO | REGISTRO]"
+contexto: "[OPUS | MÉTIER | AKADEMIA | INFRAESTRUCTURA | VIDA]"
+
+# CICLO DE VIDA
+fase_actual: "[nombre de la fase]"
+lifecycle_status: "[ACTIVO | PAUSED | HIBERNANDO | FÓSIL]"
+
+# TEMPERATURA (calculada por MNENTROPY — no editar manualmente en producción)
+# Para repos nuevos, estimar según actividad reciente:
+#   0–77 K   = FÓSIL       | 77–273 K = HIBERNANDO
+#   273–373 K = TEMPLADO   | 373–1200 K = ACTIVO
+#   1200–5778 K = IGNICIÓN | >5778 K = PLASMA
+temperatura_estimada_K: 373
+temperatura_calculada_K: null  # MNENTROPY actualiza este campo
+ultima_actividad_semantica: null  # MNENTROPY actualiza este campo
+
+# RELACIONES
+proyecto_padre: "[nombre del proyecto en zentropia.projects — o null]"
+depende_de: []  # repos de los que este depende
+habilita_a: []  # repos que dependen de este
+
+# VALOR ESTRATÉGICO (aplica a SISTEMA, PRODUCTO, HERRAMIENTA)
+# null para INVESTIGACIÓN, IDENTIDAD
+valor_modelo: "[COMERCIAL | ESTRATÉGICO | INTELECTUAL | PERSONAL | null]"
+valor_estrategico_1_10: null  # subjetivo — ayuda a priorizar
+
+# REDUNDANCIA
+redundancia_candidatos: []  # nombres de repos que podrían fusionarse con este
+
+# MADUREZ ESTRUCTURAL (auto-verificada por MNENTROPY)
+madurez:
+  nivel_0_existencia: false    # README.md con qué es y para qué
+  nivel_1_higiene: false       # .gitignore, .env.example
+  nivel_2_orientacion: false   # ESTADO.md con próximo paso
+  nivel_3_intencion: false     # specs, ADRs si aplica
+  nivel_4_produccion: false    # tests, CI/CD
+
+# AGENTES QUE TRABAJAN EN ESTE REPO
+agentes_activos:
+  - tipo: humano
+    id: cluciani
+  # - tipo: claude
+  # - tipo: cursor
+  # - tipo: gemini
+
+# NOTAS LIBRES
+notas: ""

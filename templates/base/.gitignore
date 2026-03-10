@@ -1,0 +1,65 @@
+# ── Secrets ──────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets/
+
+# ── macOS ─────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+
+# ── Python ────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Node / JavaScript ─────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.yarn/install-state.gz
+dist/
+.next/
+.nuxt/
+.output/
+
+# ── IDEs ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+
+# ── Logs ──────────────────────────────────────────────────────────
+*.log
+logs/
+!logs/.gitkeep
+
+# ── Datos generados ───────────────────────────────────────────────
+*.sqlite
+*.db
+*.cache
+
+# ── user_data (multi-tenancy) ─────────────────────────────────────
+# Descomentar si este repo usa user_data/ con datos personales
+# user_data/*/
