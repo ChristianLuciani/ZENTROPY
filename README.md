@@ -7,7 +7,7 @@
 
 ## El Problema que Nadie Nombra
 
-Vivimos en la era de la inteligencia artificial más poderosa de la historia humana. Tenemos acceso instantáneo a modelos capaces de razonar, diseñar, crear y resolver. Y sin embargo, la mayoría de nosotros termina cada semana más confundida, más dispersa, más paralizada que la anterior.
+Vivimos en nuveva  era de la historia humana y la inteligencia. Tenemos acceso instantáneo a modelos de IA capaces de razonar, diseñar, crear y resolver. Y sin embargo, la mayoría de nosotros termina cada semana más confundida, más dispersa, más paralizada que la anterior.
 
 ¿Por qué?
 
