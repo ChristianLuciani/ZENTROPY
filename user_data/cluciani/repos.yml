@@ -1,0 +1,78 @@
+# Inventario de repos — tenant: cluciani
+# Formato: nombre, tipo, contexto, temperatura_estimada_K, notas
+# Temperatura calculada automáticamente por MNENTROPY desde git log
+
+repos:
+  - name: ZENTROPY
+    tipo: SISTEMA
+    contexto: INFRAESTRUCTURA
+    temperatura: 4200
+    notas: "Sistema de cognición externalizada. Core del ecosistema."
+
+  - name: estelectica
+    tipo: INVESTIGACIÓN
+    contexto: OPUS
+    temperatura: 4200
+    notas: "Filosofía del espacio epistémico generado con IA. Evolución del método dialéctico."
+
+  - name: NEXOS
+    tipo: SISTEMA
+    contexto: MÉTIER
+    temperatura: 1500
+    notas: "Infraestructura principal de operación profesional."
+
+  - name: FINEXOS
+    tipo: SISTEMA
+    contexto: MÉTIER
+    temperatura: 800
+    notas: "Control financiero sobre Postgres + Kontablo."
+
+  - name: accounting-esperanto
+    tipo: INVESTIGACIÓN
+    contexto: MÉTIER
+    temperatura: 1200
+    notas: "Ontología contable universal. Aka Kontablo."
+
+  - name: CLApps
+    tipo: PRODUCTO
+    contexto: MÉTIER
+    temperatura: 400
+    notas: "SaaS federado multi-cliente. MVP: My Podo Center."
+
+  - name: drahman-org
+    tipo: PRODUCTO
+    contexto: MÉTIER
+    temperatura: 600
+    notas: "36 tutores IA con pedagogía socrática para currículo K-12 Ecuador."
+
+  - name: cv-cluciani
+    tipo: IDENTIDAD
+    contexto: OPUS
+    temperatura: 800
+    notas: "CV interactivo tipo museo virtual. Desplegado en GitHub Pages."
+
+  - name: Personal-Knowlege-System
+    tipo: SISTEMA
+    contexto: INFRAESTRUCTURA
+    temperatura: 200
+    notas: "HIBERNANDO. Logseq vault vive en /Users/eva/Sync/My Notes"
+
+  - name: clux
+    tipo: INVESTIGACIÓN
+    contexto: AKADEMIA
+    temperatura: 150
+    notas: "HIBERNANDO. Diseño inmersivo web basado en neurociencias. CL User Experience."
+
+  - name: angel-xutils-lib
+    tipo: HERRAMIENTA
+    contexto: MÉTIER
+    temperatura: 77
+    notas: "FÓSIL. Librerías externas GAS para Grupo Angel. Archivar."
+
+# Repos USFQ — física académica
+usfq_repos:
+  tipo: INVESTIGACIÓN
+  contexto: AKADEMIA
+  temperatura: 77
+  notas: "FÓSIL. Organizar y archivar. Potencial compilación de libro de experimentos físicos."
+  repos: [] # poblar con auditoría completa
