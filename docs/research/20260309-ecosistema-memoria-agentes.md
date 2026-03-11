@@ -1,6 +1,6 @@
 # Investigación: Ecosistema Open Source para Memoria de Agentes
 **Fecha:** 2026-03-09
-**Herramientas:** Perplexity + Google DeepSearch
+**Herramientas:** Perplexity [Agente Cognitivo](https://www.perplexity.ai/search/estoy-disenando-un-agente-cogn-4EUiERAgTFCMNLKHAihAUg?sm=d) + Google DeepSearch[Agente Cognitivo Personal: Investigación Open Source](https://gemini.google.com/app/0d116735ca0cb02a)
 **Objetivo:** Decidir si construir MNENTROPY desde cero o apalancarse en proyectos existentes
 **ADR resultante:** ADR-I-007 (pendiente de escribir)
 **Decisión tomada:** Inspiración sin dependencia directa — patrón Opción C
